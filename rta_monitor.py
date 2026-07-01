@@ -90,6 +90,85 @@ def parse_cameo(html):
     return _companies_from_dropdown(BeautifulSoup(html, "html.parser"))
 
 
+def fetch_kfin_companies():
+    """
+    KFin's IPO Allotment Status page is a React SPA. The company list is
+    NOT fetched via API — it's embedded directly in the main JS bundle as
+    a JSON.parse('[{"clientId":"...","name":"..."}, ...]') call.
+
+    Steps:
+      1. Fetch the HTML at ipostatus.kfintech.com/
+      2. Extract the main JS bundle path from a <script src="..."> tag
+         (filename has a hash that changes on redeploy)
+      3. Fetch that bundle
+      4. Locate the JSON.parse call with clientId + name entries
+      5. Parse it out and return the names
+    """
+    import re
+
+    base = "https://ipostatus.kfintech.com"
+
+    def _get(url):
+        kwargs = {"headers": HEADERS, "timeout": 30}
+        if USE_IMPERSONATE:
+            kwargs["impersonate"] = "chrome124"
+        r = http_client.get(url, **kwargs)
+        r.raise_for_status()
+        return r.text
+
+    try:
+        html = _get(base + "/")
+    except Exception as e:
+        print(f"  ✗ HTML fetch failed: {e}")
+        return []
+
+    m = re.search(r'src="([^"]*main\.[a-z0-9]+\.js)"', html)
+    if not m:
+        print("  ✗ main JS bundle URL not found in HTML")
+        return []
+    bundle_path = m.group(1).lstrip("./")
+    bundle_url = f"{base}/{bundle_path}"
+    print(f"  · bundle: {bundle_path}")
+
+    try:
+        js = _get(bundle_url)
+    except Exception as e:
+        print(f"  ✗ bundle fetch failed: {e}")
+        return []
+
+    # Find JSON.parse('[{...clientId...name...}]') — the array with the IPOs
+    idx = js.find("JSON.parse('[{\\\"clientId")
+    if idx < 0:
+        # Try the un-escaped variant just in case
+        idx = js.find("JSON.parse('[{\"clientId")
+    if idx < 0:
+        print("  ✗ JSON.parse block for IPO list not found in bundle")
+        return []
+
+    # From idx, find the first ' after "JSON.parse('", then the matching closing '
+    quote_start = js.find("'", idx)
+    if quote_start < 0:
+        return []
+    quote_end = js.find("']", quote_start + 1)
+    if quote_end < 0:
+        return []
+    literal = js[quote_start + 1: quote_end + 1]
+
+    try:
+        entries = json.loads(literal)
+    except Exception as e:
+        print(f"  ✗ JSON parse failed: {e}")
+        return []
+
+    names = []
+    for entry in entries:
+        if isinstance(entry, dict):
+            name = str(entry.get("name", "")).strip()
+            if name:
+                names.append(name)
+    return names
+
+
 def fetch_mufg_companies():
     """
     MUFG (formerly Link Intime) uses a two-step API:
@@ -204,9 +283,12 @@ def parse_integrated(html):
 
 RTAS = {
     "MUFG": {
-        # Special: doesn't fetch HTML; uses a two-step API instead.
         "custom_fetcher": fetch_mufg_companies,
         "url": "https://in.mpms.mufg.com/Initial_Offer/public-issues.html",
+    },
+    "KFin": {
+        "custom_fetcher": fetch_kfin_companies,
+        "url": "https://ipostatus.kfintech.com/",
     },
     "Bigshare": {
         "url": "https://ipo.bigshareonline.com/ipo_status.html",
