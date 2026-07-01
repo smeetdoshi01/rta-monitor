@@ -33,6 +33,15 @@ jobs:
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
         run: python rta_monitor.py
 
+      - name: Upload debug artifacts
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: rta-debug-${{ github.run_number }}
+          path: debug/
+          retention-days: 7
+          if-no-files-found: ignore
+
       - name: Commit updated state
         run: |
           git config user.name  "github-actions[bot]"
