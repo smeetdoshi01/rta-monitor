@@ -91,29 +91,34 @@ def parse_cameo(html):
 
 def parse_integrated(html):
     """
-    Integrated Registry uses tables, not dropdowns. Look for any table
-    cell containing a company-like name.
+    Integrated Registry doesn't use tables. The "IPO Allotment Advertisement"
+    list lives inside:
+        <section class="NewsAd CommonSectionCls">
+          <div class="Circular_FlexTable">
+            <div class="Circular-flex-Row">
+              <div class="Circular-cell">1</div>
+              <div class="Circular-cell">Company Name Limited</div>
+              <div class="Circular-cell FlixDiv">...download PDF...</div>
+    We extract company names from that specific section.
     """
     soup = BeautifulSoup(html, "html.parser")
     names = []
     seen = set()
-    for table in soup.find_all("table"):
-        for row in table.find_all("tr"):
-            for cell in row.find_all(["td", "th"]):
-                text = cell.get_text().strip()
-                if not text or len(text) > 200:
-                    continue
-                # Multi-line cell = probably not just a name
-                if text.count("\n") > 2:
-                    continue
-                upper = text.upper()
-                if not any(tok in upper for tok in COMPANY_TOKENS):
-                    continue
-                if upper in ("TITLE", "S NO", "SR NO", "SR.NO", "COMPANY", "COMPANY NAME"):
-                    continue
-                if text not in seen:
-                    seen.add(text)
-                    names.append(text)
+
+    section = soup.find("section", class_="NewsAd")
+    if section is None:
+        return []
+
+    for cell in section.find_all("div", class_="Circular-cell"):
+        text = cell.get_text().strip()
+        if not text or len(text) > 200:
+            continue
+        upper = text.upper()
+        if not any(tok in upper for tok in COMPANY_TOKENS):
+            continue
+        if text not in seen:
+            seen.add(text)
+            names.append(text)
     return names
 
 
