@@ -19,6 +19,7 @@ JS-loaded.
 import json
 import os
 import sys
+import xml.etree.ElementTree as ET
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
@@ -89,6 +90,85 @@ def parse_cameo(html):
     return _companies_from_dropdown(BeautifulSoup(html, "html.parser"))
 
 
+def fetch_mufg_companies():
+    """
+    MUFG (formerly Link Intime) uses a two-step API:
+      1. POST /Initial_Offer/IPO.aspx/generateToken → returns {"d": "<token>"}
+      2. POST /Initial_Offer/IPO.aspx/GetDetails with the token
+         → returns {"d": "<XML with <NewDataSet><Table><companyname>...>"}
+
+    Returns list of company names, or [] on failure.
+
+    Note: 'clientid' is a best-guess payload param name. If the API returns
+    empty on the second call, try 'token', 'code', or 'key' in payload_key.
+    """
+    base = "https://in.mpms.mufg.com/Initial_Offer/IPO.aspx"
+    api_headers = {
+        "Content-Type": "application/json; charset=UTF-8",
+        "Accept": "application/json, text/javascript, */*; q=0.01",
+        "X-Requested-With": "XMLHttpRequest",
+        "Referer": "https://in.mpms.mufg.com/Initial_Offer/public-issues.html",
+        "Origin": "https://in.mpms.mufg.com",
+        "User-Agent": HEADERS["User-Agent"],
+    }
+
+    def _post(url, body):
+        kwargs = {"headers": api_headers, "timeout": 30,
+                  "data": json.dumps(body)}
+        if USE_IMPERSONATE:
+            kwargs["impersonate"] = "chrome124"
+        return http_client.post(url, **kwargs)
+
+    # Step 1: get token
+    try:
+        r1 = _post(f"{base}/generateToken", {})
+        r1.raise_for_status()
+        token_wrapper = r1.json()
+        token = str(token_wrapper.get("d", "")).strip()
+        if not token:
+            print(f"  · generateToken returned no token: {token_wrapper}")
+            return []
+        print(f"  · token acquired: {token[:6]}...")
+    except Exception as e:
+        print(f"  ✗ generateToken failed: {e}")
+        return []
+
+    # Step 2: get company list. Try likely param names.
+    # From what we've seen in the response, 'clientid' is the most common
+    # Link Intime / MUFG convention. Fall back to other names if empty.
+    xml_str = ""
+    for payload_key in ("clientid", "token", "clientId", "key"):
+        try:
+            r2 = _post(f"{base}/GetDetails", {payload_key: token})
+            r2.raise_for_status()
+            wrapper = r2.json()
+            candidate = str(wrapper.get("d", "")).strip()
+            if candidate and "<NewDataSet" in candidate:
+                xml_str = candidate
+                print(f"  · GetDetails worked with payload key '{payload_key}'")
+                break
+            else:
+                print(f"  · GetDetails empty with '{payload_key}': {candidate[:80]}")
+        except Exception as e:
+            print(f"  · GetDetails errored with '{payload_key}': {e}")
+
+    if not xml_str:
+        return []
+
+    # Parse XML: <NewDataSet><Table><companyname>Name</companyname></Table>...
+    try:
+        root = ET.fromstring(xml_str)
+        names = []
+        for table in root.findall(".//Table"):
+            cn = table.find("companyname")
+            if cn is not None and cn.text:
+                names.append(cn.text.strip())
+        return names
+    except ET.ParseError as e:
+        print(f"  ✗ XML parse failed: {e}")
+        return []
+
+
 def parse_integrated(html):
     """
     Integrated Registry doesn't use tables. The "IPO Allotment Advertisement"
@@ -123,6 +203,11 @@ def parse_integrated(html):
 
 
 RTAS = {
+    "MUFG": {
+        # Special: doesn't fetch HTML; uses a two-step API instead.
+        "custom_fetcher": fetch_mufg_companies,
+        "url": "https://in.mpms.mufg.com/Initial_Offer/public-issues.html",
+    },
     "Bigshare": {
         "url": "https://ipo.bigshareonline.com/ipo_status.html",
         "parser": parse_bigshare,
@@ -221,14 +306,23 @@ def normalize_name(s):
 
 def check_rta(name, config, state):
     print(f"→ {name}")
-    html = fetch_html(config["url"])
-    if not html:
-        return
-    try:
-        companies = config["parser"](html)
-    except Exception as e:
-        print(f"  ✗ parser error: {e}")
-        return
+    # MUFG uses a custom API-based fetcher instead of HTML parsing
+    if "custom_fetcher" in config:
+        try:
+            companies = config["custom_fetcher"]()
+        except Exception as e:
+            print(f"  ✗ custom fetcher error: {e}")
+            return
+        html = ""  # for debug save consistency
+    else:
+        html = fetch_html(config["url"])
+        if not html:
+            return
+        try:
+            companies = config["parser"](html)
+        except Exception as e:
+            print(f"  ✗ parser error: {e}")
+            return
 
     if not companies:
         # Save the HTML so we can see what the parser missed
