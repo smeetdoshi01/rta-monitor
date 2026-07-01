@@ -91,29 +91,29 @@ def parse_cameo(html):
 
 def parse_integrated(html):
     """
-    Integrated Registry uses tables, not dropdowns. Multiple tables exist;
-    we want anything in a <td> that looks like a company name.
+    Integrated Registry uses tables, not dropdowns. Look for any table
+    cell containing a company-like name.
     """
     soup = BeautifulSoup(html, "html.parser")
     names = []
     seen = set()
     for table in soup.find_all("table"):
         for row in table.find_all("tr"):
-            cells = row.find_all("td")
-            if len(cells) < 2:
-                continue
-            text = cells[1].get_text().strip()
-            if not text:
-                continue
-            upper = text.upper()
-            if not any(tok in upper for tok in COMPANY_TOKENS):
-                continue
-            # Skip common header/junk rows
-            if upper in ("TITLE", "S NO", "SR NO", "SR.NO", "COMPANY"):
-                continue
-            if text not in seen:
-                seen.add(text)
-                names.append(text)
+            for cell in row.find_all(["td", "th"]):
+                text = cell.get_text().strip()
+                if not text or len(text) > 200:
+                    continue
+                # Multi-line cell = probably not just a name
+                if text.count("\n") > 2:
+                    continue
+                upper = text.upper()
+                if not any(tok in upper for tok in COMPANY_TOKENS):
+                    continue
+                if upper in ("TITLE", "S NO", "SR NO", "SR.NO", "COMPANY", "COMPANY NAME"):
+                    continue
+                if text not in seen:
+                    seen.add(text)
+                    names.append(text)
     return names
 
 
@@ -226,7 +226,17 @@ def check_rta(name, config, state):
         return
 
     if not companies:
-        print(f"  ⚠ no companies extracted from page (parser may need updating)")
+        # Save the HTML so we can see what the parser missed
+        try:
+            import re
+            from pathlib import Path as _P
+            debug_dir = _P("debug")
+            debug_dir.mkdir(exist_ok=True)
+            safe = re.sub(r"[^A-Za-z0-9_-]", "_", name)
+            (debug_dir / f"{safe}_empty.html").write_text(html, encoding="utf-8")
+            print(f"  ⚠ no companies extracted → debug/{safe}_empty.html saved")
+        except Exception as e:
+            print(f"  ⚠ no companies extracted (couldn't save debug: {e})")
         return
 
     # Map normalized_key -> display_name so we alert with the pretty name
