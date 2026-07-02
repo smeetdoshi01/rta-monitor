@@ -1,19 +1,10 @@
 {
   "Bigshare": {
     "companies": [
-      "ADVIT JEWELS LIMITED",
-      "ANUBHAV PLAST LIMITED",
-      "GENXAI ANALYTICS LIMITED",
-      "GOLDLINE PHARMACEUTICAL LIMITED",
-      "HARIKANTA OVERSEAS LIMITED",
-      "JIVIAL INDUSTRIES LIMITED",
-      "M R MANIVENI FOODS LIMITED",
-      "MERRITRONIX LTD",
-      "RAJNANDINI FASHION INDIA LIMITED",
-      "VEGORAMA PUNJABI ANGITHI LIMITED",
-      "YAASHVI JEWELLERS LIMITED"
+      "AASTHA SPINTEX LIMITED",
+      "ADVIT JEWELS LIMITED"
     ],
-    "last_checked": "2026-07-02T19:29:29.662117+05:30"
+    "last_checked": "2026-07-02T21:09:10.946671+05:30"
   },
   "Cameo": {
     "companies": [
@@ -37,7 +28,7 @@
       "TAKYON NETWORKS LIMITED",
       "UTKAL SPECIALITY INDUSTRIES INDIA LIMITED"
     ],
-    "last_checked": "2026-07-02T19:29:32.550930+05:30"
+    "last_checked": "2026-07-02T21:09:13.508497+05:30"
   },
   "Integrated Registry": {
     "companies": [
@@ -52,13 +43,14 @@
       "SOLVE PLASTIC PRODUCTS LIMITED",
       "STORAGE TECHNOLOGIES AND AUTOMATION LIMITED"
     ],
-    "last_checked": "2026-07-02T19:29:33.575304+05:30"
+    "last_checked": "2026-07-02T21:09:14.496383+05:30"
   },
   "KFin": {
     "companies": [
       "ACCORD TRANSFORMER AND SWITCHGEAR LIMITED",
       "ACCRETION NUTRAVEDA LIMITED",
       "ADISOFT TECHNOLOGIES LIMITED",
+      "ADON AGRO COMMODITIES LIMITED SME IPO",
       "AMIR CHAND JAGDISH KUMAR (EXPORTS) LIMITED",
       "AYE FINANCE LIMITED",
       "BAGMANE PRIME OFFICE REIT",
@@ -96,7 +88,7 @@
       "VAHH CHEMICALS LIMITED",
       "VALUE 360 COMMUNICATIONS LIMITED"
     ],
-    "last_checked": "2026-07-02T19:29:24.006954+05:30"
+    "last_checked": "2026-07-02T21:09:05.401276+05:30"
   },
   "MUFG": {
     "companies": [
@@ -112,7 +104,7 @@
       "VIVID ELECTROMECH LIMITED - SME IPO",
       "WATERWAYS LEISURE TOURISM LIMITED - IPO"
     ],
-    "last_checked": "2026-07-02T19:29:23.876422+05:30"
+    "last_checked": "2026-07-02T21:09:03.804287+05:30"
   },
   "Mudra": {
     "companies": [
@@ -120,7 +112,7 @@
       "RECODE STUDIOS LIMITED",
       "SUSAN ELECTRICALS INDIA LIMITED"
     ],
-    "last_checked": "2026-07-02T19:29:30.916082+05:30"
+    "last_checked": "2026-07-02T21:09:12.054621+05:30"
   },
   "Purva Sharegistry": {
     "companies": [
@@ -165,6 +157,6 @@
       "SPECIALITY MEDICINES PRIVATE LIMITED",
       "WESTERN OVERSEAS STUDY ABROAD LIMITED"
     ],
-    "last_checked": "2026-07-02T19:29:30.220315+05:30"
+    "last_checked": "2026-07-02T21:09:11.299511+05:30"
   }
 }
