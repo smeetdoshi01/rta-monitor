@@ -93,16 +93,11 @@ def parse_cameo(html):
 def fetch_kfin_companies():
     """
     KFin's IPO Allotment Status page is a React SPA. The company list is
-    NOT fetched via API — it's embedded directly in the main JS bundle as
-    a JSON.parse('[{"clientId":"...","name":"..."}, ...]') call.
+    embedded directly in the main JS bundle as JSON entries like
+    {"clientId":"...","name":"..."} wrapped in a JSON.parse() call.
 
-    Steps:
-      1. Fetch the HTML at ipostatus.kfintech.com/
-      2. Extract the main JS bundle path from a <script src="..."> tag
-         (filename has a hash that changes on redeploy)
-      3. Fetch that bundle
-      4. Locate the JSON.parse call with clientId + name entries
-      5. Parse it out and return the names
+    We use regex to find each entry directly — much more robust than
+    trying to locate and unwrap the JSON.parse call literal.
     """
     import re
 
@@ -136,36 +131,37 @@ def fetch_kfin_companies():
         print(f"  ✗ bundle fetch failed: {e}")
         return []
 
-    # Find JSON.parse('[{...clientId...name...}]') — the array with the IPOs
-    idx = js.find("JSON.parse('[{\\\"clientId")
-    if idx < 0:
-        # Try the un-escaped variant just in case
-        idx = js.find("JSON.parse('[{\"clientId")
-    if idx < 0:
-        print("  ✗ JSON.parse block for IPO list not found in bundle")
+    # Try several patterns to accommodate different quoting styles the
+    # minifier might have chosen for the surrounding JSON.parse literal.
+    patterns = [
+        # single-quoted wrapper: {"clientId":"...","name":"..."}
+        r'\{"clientId":"(\d+)","name":"([^"]+?)"\}',
+        # double-quoted wrapper: escaped quotes inside {\"clientId\":\"...\",\"name\":\"...\"}
+        r'\{\\"clientId\\":\\"(\d+)\\","name\\":\\"([^"\\]+?)\\"\}',
+        # backtick wrapper — same content structure as single-quoted for our purposes
+    ]
+
+    matches = []
+    for pat in patterns:
+        matches = re.findall(pat, js)
+        if matches:
+            print(f"  · matched pattern: {pat[:40]}...")
+            break
+
+    if not matches:
+        # Diagnostic: is 'clientId' even present, and if so, what surrounds it?
+        idx = js.find("clientId")
+        if idx < 0:
+            print("  ✗ 'clientId' not found in bundle at all")
+        else:
+            snippet = js[max(0, idx - 40): idx + 80]
+            # Only print printable ASCII to avoid encoding issues in logs
+            snippet_safe = "".join(c if 32 <= ord(c) < 127 else "?" for c in snippet)
+            print(f"  ✗ regex didn't match. 'clientId' at pos {idx}, context: {snippet_safe}")
         return []
 
-    # From idx, find the first ' after "JSON.parse('", then the matching closing '
-    quote_start = js.find("'", idx)
-    if quote_start < 0:
-        return []
-    quote_end = js.find("']", quote_start + 1)
-    if quote_end < 0:
-        return []
-    literal = js[quote_start + 1: quote_end + 1]
-
-    try:
-        entries = json.loads(literal)
-    except Exception as e:
-        print(f"  ✗ JSON parse failed: {e}")
-        return []
-
-    names = []
-    for entry in entries:
-        if isinstance(entry, dict):
-            name = str(entry.get("name", "")).strip()
-            if name:
-                names.append(name)
+    names = [name for _cid, name in matches]
+    print(f"  · extracted {len(names)} companies")
     return names
 
 
