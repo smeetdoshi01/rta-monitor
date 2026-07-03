@@ -2,9 +2,10 @@
   "Bigshare": {
     "companies": [
       "AASTHA SPINTEX LIMITED",
-      "ADVIT JEWELS LIMITED"
+      "ADVIT JEWELS LIMITED",
+      "VINIT MOBILE LIMITED"
     ],
-    "last_checked": "2026-07-03T20:00:41.403655+05:30"
+    "last_checked": "2026-07-03T21:43:05.123715+05:30"
   },
   "Cameo": {
     "companies": [
@@ -22,13 +23,14 @@
       "OPTIVALUE TEK CONSULTING LIMITED",
       "REPONO LIMITED",
       "SAMPAT ALUMINIUM LIMITED",
+      "SEEMAX RESOURCES LIMITED",
       "SHIPWAVES ONLINE LIMITED",
       "SUNDREX OIL COMPANY LIMITED",
       "SYSTEMATIC INDUSTRIES LIMITED",
       "TAKYON NETWORKS LIMITED",
       "UTKAL SPECIALITY INDUSTRIES INDIA LIMITED"
     ],
-    "last_checked": "2026-07-03T20:00:44.117943+05:30"
+    "last_checked": "2026-07-03T21:43:08.936116+05:30"
   },
   "Integrated Registry": {
     "companies": [
@@ -43,7 +45,7 @@
       "SOLVE PLASTIC PRODUCTS LIMITED",
       "STORAGE TECHNOLOGIES AND AUTOMATION LIMITED"
     ],
-    "last_checked": "2026-07-03T20:00:45.115001+05:30"
+    "last_checked": "2026-07-03T21:43:09.895733+05:30"
   },
   "KFin": {
     "companies": [
@@ -89,7 +91,7 @@
       "VAHH CHEMICALS LIMITED",
       "VALUE 360 COMMUNICATIONS LIMITED"
     ],
-    "last_checked": "2026-07-03T20:00:36.751510+05:30"
+    "last_checked": "2026-07-03T21:43:00.045692+05:30"
   },
   "MUFG": {
     "companies": [
@@ -105,7 +107,7 @@
       "VIVID ELECTROMECH LIMITED - SME IPO",
       "WATERWAYS LEISURE TOURISM LIMITED - IPO"
     ],
-    "last_checked": "2026-07-03T20:00:35.974589+05:30"
+    "last_checked": "2026-07-03T21:42:59.901939+05:30"
   },
   "Mudra": {
     "companies": [
@@ -113,13 +115,13 @@
       "RECODE STUDIOS LIMITED",
       "SUSAN ELECTRICALS INDIA LIMITED"
     ],
-    "last_checked": "2026-07-03T20:00:42.612841+05:30"
+    "last_checked": "2026-07-03T21:43:06.272204+05:30"
   },
   "Purva Sharegistry": {
     "companies": [
       "SMR JEWELS PRIVATE LIMITED"
     ],
-    "last_checked": "2026-07-03T03:12:11.713866+05:30"
+    "last_checked": "2026-07-03T21:43:07.630322+05:30"
   },
   "Skyline": {
     "companies": [
@@ -158,6 +160,6 @@
       "SPECIALITY MEDICINES PRIVATE LIMITED",
       "WESTERN OVERSEAS STUDY ABROAD LIMITED"
     ],
-    "last_checked": "2026-07-03T20:00:41.819420+05:30"
+    "last_checked": "2026-07-03T21:43:05.522854+05:30"
   }
 }
