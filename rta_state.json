@@ -1,12 +1,9 @@
 {
   "Bigshare": {
     "companies": [
-      "AASTHA SPINTEX LIMITED",
-      "ADVIT JEWELS LIMITED",
-      "KUSUMGAR LIMITED",
-      "VINIT MOBILE LIMITED"
+      "KUSUMGAR LIMITED"
     ],
-    "last_checked": "2026-07-13T22:49:32.146661+05:30"
+    "last_checked": "2026-07-13T23:35:04.109060+05:30"
   },
   "Cameo": {
     "companies": [
@@ -31,7 +28,7 @@
       "TAKYON NETWORKS LIMITED",
       "UTKAL SPECIALITY INDUSTRIES INDIA LIMITED"
     ],
-    "last_checked": "2026-07-13T22:49:34.960490+05:30"
+    "last_checked": "2026-07-13T23:35:07.642599+05:30"
   },
   "Integrated Registry": {
     "companies": [
@@ -46,7 +43,7 @@
       "SOLVE PLASTIC PRODUCTS LIMITED",
       "STORAGE TECHNOLOGIES AND AUTOMATION LIMITED"
     ],
-    "last_checked": "2026-07-13T22:49:35.977331+05:30"
+    "last_checked": "2026-07-13T23:35:08.616686+05:30"
   },
   "KFin": {
     "companies": [
@@ -93,7 +90,7 @@
       "VAHH CHEMICALS LIMITED",
       "VALUE 360 COMMUNICATIONS LIMITED"
     ],
-    "last_checked": "2026-07-13T22:49:25.976784+05:30"
+    "last_checked": "2026-07-13T23:34:59.566733+05:30"
   },
   "MUFG": {
     "companies": [
@@ -103,7 +100,7 @@
       "UHM VACATION LIMITED - SME IPO",
       "WATERWAYS LEISURE TOURISM LIMITED - IPO"
     ],
-    "last_checked": "2026-07-13T22:49:25.842602+05:30"
+    "last_checked": "2026-07-13T23:34:59.489948+05:30"
   },
   "Mudra": {
     "companies": [
@@ -111,7 +108,7 @@
       "RECODE STUDIOS LIMITED",
       "SUSAN ELECTRICALS INDIA LIMITED"
     ],
-    "last_checked": "2026-07-13T22:49:33.335389+05:30"
+    "last_checked": "2026-07-13T23:35:05.473367+05:30"
   },
   "Purva Sharegistry": {
     "companies": [
@@ -157,6 +154,6 @@
       "SPECIALITY MEDICINES PRIVATE LIMITED",
       "WESTERN OVERSEAS STUDY ABROAD LIMITED"
     ],
-    "last_checked": "2026-07-13T22:49:32.526891+05:30"
+    "last_checked": "2026-07-13T23:35:04.723042+05:30"
   }
 }
