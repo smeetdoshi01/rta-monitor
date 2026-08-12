@@ -1,13 +1,9 @@
 {
   "Bigshare": {
     "companies": [
-      "ANAWIL WIRE AND ENGINEERING LIMITED",
-      "HAPPY STEELS LIMITED",
-      "KUSUMGAR LIMITED",
-      "METALIC TECHNOFORGE LIMITED",
-      "SOTEFIN BHARAT LIMITED"
+      "TECHNOCRAFT VENTURES LIMITED"
     ],
-    "last_checked": "2026-08-12T20:42:41.164980+05:30"
+    "last_checked": "2026-08-12T21:39:05.877067+05:30"
   },
   "Cameo": {
     "companies": [
@@ -32,7 +28,7 @@
       "TAKYON NETWORKS LIMITED",
       "UTKAL SPECIALITY INDUSTRIES INDIA LIMITED"
     ],
-    "last_checked": "2026-08-12T20:42:43.919083+05:30"
+    "last_checked": "2026-08-12T21:39:08.619428+05:30"
   },
   "Integrated Registry": {
     "companies": [
@@ -107,7 +103,7 @@
       "VALUE 360 COMMUNICATIONS LIMITED",
       "XTRANET TECHNOLOGIES LIMITED"
     ],
-    "last_checked": "2026-08-12T20:42:40.455602+05:30"
+    "last_checked": "2026-08-12T21:39:04.419384+05:30"
   },
   "MUFG": {
     "companies": [
@@ -115,7 +111,7 @@
       "LOHIA CORP LIMITED - IPO",
       "POOJAA PRECISION ENGG. LIMITED - SME IPO"
     ],
-    "last_checked": "2026-08-12T20:42:40.326458+05:30"
+    "last_checked": "2026-08-12T21:39:04.092563+05:30"
   },
   "Mudra": {
     "companies": [
@@ -123,7 +119,7 @@
       "RECODE STUDIOS LIMITED",
       "SUSAN ELECTRICALS INDIA LIMITED"
     ],
-    "last_checked": "2026-08-12T20:42:42.389800+05:30"
+    "last_checked": "2026-08-12T21:39:07.043013+05:30"
   },
   "Purva Sharegistry": {
     "companies": [
@@ -168,6 +164,6 @@
       "SPECIALITY MEDICINES PRIVATE LIMITED",
       "WESTERN OVERSEAS STUDY ABROAD LIMITED"
     ],
-    "last_checked": "2026-08-12T20:42:41.569490+05:30"
+    "last_checked": "2026-08-12T21:39:06.265596+05:30"
   }
 }
