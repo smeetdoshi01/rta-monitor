@@ -1,11 +1,10 @@
 {
   "Bigshare": {
     "companies": [
-      "ABH HEALTHCARE LIMITED",
-      "HY-TECH ENGINEERS LIMITED",
-      "SKYWAYS AIR SERVICES LIMITED"
+      "KWICK FORENSIC SOLUTIONS LIMITED",
+      "LUMINO INDUSTRIES LIMITED"
     ],
-    "last_checked": "2026-09-01T19:11:02.610824+05:30"
+    "last_checked": "2026-09-01T22:56:40.050604+05:30"
   },
   "Cameo": {
     "companies": [
@@ -33,7 +32,7 @@
       "TAKYON NETWORKS LIMITED",
       "UTKAL SPECIALITY INDUSTRIES INDIA LIMITED"
     ],
-    "last_checked": "2026-09-01T19:11:05.295223+05:30"
+    "last_checked": "2026-09-01T22:56:42.585170+05:30"
   },
   "Integrated Registry": {
     "companies": [
@@ -120,7 +119,7 @@
       "VALUE 360 COMMUNICATIONS LIMITED",
       "XTRANET TECHNOLOGIES LIMITED"
     ],
-    "last_checked": "2026-09-01T19:11:01.810370+05:30"
+    "last_checked": "2026-09-01T22:56:38.652385+05:30"
   },
   "MUFG": {
     "companies": [
@@ -129,7 +128,7 @@
       "LALITHAA JEWELLERY MART LIMITED - IPO",
       "SYMBIOTEC PHARMALAB LIMITED - IPO"
     ],
-    "last_checked": "2026-09-01T19:11:01.746138+05:30"
+    "last_checked": "2026-09-01T22:56:38.508179+05:30"
   },
   "Mudra": {
     "companies": [
@@ -137,7 +136,7 @@
       "RECODE STUDIOS LIMITED",
       "SUSAN ELECTRICALS INDIA LIMITED"
     ],
-    "last_checked": "2026-09-01T19:11:03.774296+05:30"
+    "last_checked": "2026-09-01T22:56:41.088271+05:30"
   },
   "Purva Sharegistry": {
     "companies": [
@@ -183,6 +182,6 @@
       "SPECIALITY MEDICINES PRIVATE LIMITED",
       "WESTERN OVERSEAS STUDY ABROAD LIMITED"
     ],
-    "last_checked": "2026-09-01T19:11:03.004064+05:30"
+    "last_checked": "2026-09-01T22:56:40.391506+05:30"
   }
 }
