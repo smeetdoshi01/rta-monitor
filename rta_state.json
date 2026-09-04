@@ -1,12 +1,12 @@
 {
   "Bigshare": {
     "companies": [
-      "COMPLETE SPORTS AND MANAGEMENT INDIA LIMITED",
+      "DEEPA JEWELLERS LIMITED",
+      "FARM PEACE LIMITED",
       "KWICK FORENSIC SOLUTIONS LIMITED",
-      "LUMINO INDUSTRIES LIMITED",
-      "PALUCK TECHNOLOGIES LIMITED"
+      "LUMINO INDUSTRIES LIMITED"
     ],
-    "last_checked": "2026-09-04T19:09:19.538217+05:30"
+    "last_checked": "2026-09-04T22:34:58.383243+05:30"
   },
   "Cameo": {
     "companies": [
@@ -34,7 +34,7 @@
       "TAKYON NETWORKS LIMITED",
       "UTKAL SPECIALITY INDUSTRIES INDIA LIMITED"
     ],
-    "last_checked": "2026-09-04T19:09:22.148819+05:30"
+    "last_checked": "2026-09-04T22:35:01.034899+05:30"
   },
   "Integrated Registry": {
     "companies": [
@@ -82,6 +82,7 @@
       "DHOOT TRANSMISSION LIMITED",
       "EDELWEISS FINANCIAL SERVICES LTD NCD18 JUNE 2026",
       "EDELWEISS FINANCIAL SERVICES LTD-NCDS-MARCH-2026",
+      "FLY HI MARITIME TRAVELS LIMITED",
       "FRACTAL INDUSTRIES LIMITED",
       "GULF LLOYDS INDIA LIMITED",
       "HEXAGON NUTRITION LIMITED",
@@ -110,6 +111,7 @@
       "PURPLE STYLE LABS LIMITED",
       "RAAJMARG INFRA INVESTMENT TRUST - INVIT",
       "RAJPUTANA STAINLESS LIMITED-IPO",
+      "RAYS OF BELIEF LIMITED",
       "RFBL FLEXI PACK LIMITED",
       "SBI FUNDS MANAGMENT LIMITED IPO",
       "SHANKESH JEWELLERS LIMITED",
@@ -125,7 +127,7 @@
       "VALUE 360 COMMUNICATIONS LIMITED",
       "XTRANET TECHNOLOGIES LIMITED"
     ],
-    "last_checked": "2026-09-04T19:09:18.784109+05:30"
+    "last_checked": "2026-09-04T22:34:57.070954+05:30"
   },
   "MUFG": {
     "companies": [
@@ -135,7 +137,7 @@
       "PRIORITY JEWELS LIMITED - IPO",
       "SYMBIOTEC PHARMALAB LIMITED - IPO"
     ],
-    "last_checked": "2026-09-04T19:09:18.099931+05:30"
+    "last_checked": "2026-09-04T22:34:56.358573+05:30"
   },
   "Mudra": {
     "companies": [
@@ -143,7 +145,7 @@
       "RECODE STUDIOS LIMITED",
       "SUSAN ELECTRICALS INDIA LIMITED"
     ],
-    "last_checked": "2026-09-04T19:09:20.555136+05:30"
+    "last_checked": "2026-09-04T22:34:59.549919+05:30"
   },
   "Purva Sharegistry": {
     "companies": [
@@ -189,6 +191,6 @@
       "SPECIALITY MEDICINES PRIVATE LIMITED",
       "WESTERN OVERSEAS STUDY ABROAD LIMITED"
     ],
-    "last_checked": "2026-09-04T19:09:19.893961+05:30"
+    "last_checked": "2026-09-04T22:34:58.758363+05:30"
   }
 }
