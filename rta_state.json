@@ -3,7 +3,7 @@
     "companies": [
       "JINDAL SUPREME (INDIA) LIMITED"
     ],
-    "last_checked": "2026-09-22T11:13:43.083660+05:30"
+    "last_checked": "2026-09-22T15:51:06.496483+05:30"
   },
   "Cameo": {
     "companies": [
@@ -31,7 +31,7 @@
       "TAKYON NETWORKS LIMITED",
       "UTKAL SPECIALITY INDUSTRIES INDIA LIMITED"
     ],
-    "last_checked": "2026-09-22T11:13:45.956712+05:30"
+    "last_checked": "2026-09-22T15:51:10.215002+05:30"
   },
   "Integrated Registry": {
     "companies": [
@@ -47,7 +47,7 @@
       "SOLVE PLASTIC PRODUCTS LIMITED",
       "STORAGE TECHNOLOGIES AND AUTOMATION LIMITED"
     ],
-    "last_checked": "2026-09-22T11:13:46.942331+05:30"
+    "last_checked": "2026-09-22T15:51:11.244219+05:30"
   },
   "KFin": {
     "companies": [
@@ -136,28 +136,25 @@
       "VINOD TEXWORLD LIMITED",
       "XTRANET TECHNOLOGIES LIMITED"
     ],
-    "last_checked": "2026-09-22T11:13:42.387324+05:30"
+    "last_checked": "2026-09-22T15:51:03.312573+05:30"
   },
   "MUFG": {
     "companies": [
-      "ASSET RECONSTRUCTION COMPANY (INDIA) LIMITED - IPO",
-      "GLASS WALL SYSTEMS (INDIA) LIMITED - IPO",
-      "KANOHAR ELECTRICALS LIMITED - IPO",
-      "KARAMTARA ENGINEERING LIMITED - IPO",
       "MANIKA PLASTECH LIMITED - IPO",
       "MANIPAL PAYMENT AND IDENTITY SOLUTIONS LIMITED - IPO",
       "QUANTO AGROWORLD LIMITED - SME IPO",
       "VEEGALAND DEVELOPERS LIMITED - IPO"
     ],
-    "last_checked": "2026-09-22T11:13:42.226286+05:30"
+    "last_checked": "2026-09-22T15:51:03.049868+05:30"
   },
   "Mudra": {
     "companies": [
+      "EVENTIONS LIMITED",
       "G V ELECTRICALS LIMITED",
       "RECODE STUDIOS LIMITED",
       "SUSAN ELECTRICALS INDIA LIMITED"
     ],
-    "last_checked": "2026-09-22T11:13:44.322518+05:30"
+    "last_checked": "2026-09-22T15:51:08.544439+05:30"
   },
   "Purva Sharegistry": {
     "companies": [
@@ -204,6 +201,6 @@
       "SPECIALITY MEDICINES PRIVATE LIMITED",
       "WESTERN OVERSEAS STUDY ABROAD LIMITED"
     ],
-    "last_checked": "2026-09-22T11:13:43.529235+05:30"
+    "last_checked": "2026-09-22T15:51:06.957604+05:30"
   }
 }
