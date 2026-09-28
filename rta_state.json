@@ -3,7 +3,7 @@
     "companies": [
       "JINDAL SUPREME (INDIA) LIMITED"
     ],
-    "last_checked": "2026-09-28T19:58:20.360012+05:30"
+    "last_checked": "2026-09-29T02:10:30.750050+05:30"
   },
   "Cameo": {
     "companies": [
@@ -31,7 +31,7 @@
       "TAKYON NETWORKS LIMITED",
       "UTKAL SPECIALITY INDUSTRIES INDIA LIMITED"
     ],
-    "last_checked": "2026-09-28T19:58:23.264261+05:30"
+    "last_checked": "2026-09-29T02:10:33.750735+05:30"
   },
   "Integrated Registry": {
     "companies": [
@@ -47,7 +47,7 @@
       "SOLVE PLASTIC PRODUCTS LIMITED",
       "STORAGE TECHNOLOGIES AND AUTOMATION LIMITED"
     ],
-    "last_checked": "2026-09-28T19:58:24.279152+05:30"
+    "last_checked": "2026-09-29T02:10:34.785977+05:30"
   },
   "KFin": {
     "companies": [
@@ -82,6 +82,7 @@
       "DHOOT TRANSMISSION LIMITED",
       "EDELWEISS FINANCIAL SERVICES LTD NCD18 JUNE 2026",
       "EDELWEISS FINANCIAL SERVICES LTD-NCDS-MARCH-2026",
+      "ELEVATE CAMPUSES LIMITED",
       "FLY HI MARITIME TRAVELS LIMITED",
       "FRACTAL INDUSTRIES LIMITED",
       "GULF LLOYDS INDIA LIMITED",
@@ -141,7 +142,7 @@
       "VINOD TEXWORLD LIMITED",
       "XTRANET TECHNOLOGIES LIMITED"
     ],
-    "last_checked": "2026-09-28T19:58:20.128511+05:30"
+    "last_checked": "2026-09-29T02:10:30.555034+05:30"
   },
   "MUFG": {
     "companies": [
@@ -151,10 +152,11 @@
       "MANIPAL PAYMENT AND IDENTITY SOLUTIONS LIMITED - IPO",
       "NATIONAL STOCK EXCHANGE OF INDIA LIMITED - IPO",
       "QUANTO AGROWORLD LIMITED - SME IPO",
+      "SWASTIKA INFRA LIMITED - IPO",
       "VEEGALAND DEVELOPERS LIMITED - IPO",
       "VIVEKANAND COTSPIN LIMITED - SME IPO"
     ],
-    "last_checked": "2026-09-28T19:58:19.206568+05:30"
+    "last_checked": "2026-09-29T02:10:29.812386+05:30"
   },
   "Mudra": {
     "companies": [
@@ -163,7 +165,7 @@
       "RECODE STUDIOS LIMITED",
       "SUSAN ELECTRICALS INDIA LIMITED"
     ],
-    "last_checked": "2026-09-28T19:58:21.675661+05:30"
+    "last_checked": "2026-09-29T02:10:32.120381+05:30"
   },
   "Purva Sharegistry": {
     "companies": [
@@ -210,6 +212,6 @@
       "SPECIALITY MEDICINES PRIVATE LIMITED",
       "WESTERN OVERSEAS STUDY ABROAD LIMITED"
     ],
-    "last_checked": "2026-09-28T19:58:20.853974+05:30"
+    "last_checked": "2026-09-29T02:10:31.280122+05:30"
   }
 }
