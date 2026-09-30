@@ -3,7 +3,7 @@
     "companies": [
       "JINDAL SUPREME (INDIA) LIMITED"
     ],
-    "last_checked": "2026-09-30T19:09:53.999728+05:30"
+    "last_checked": "2026-10-01T00:03:39.719304+05:30"
   },
   "Cameo": {
     "companies": [
@@ -31,7 +31,7 @@
       "TAKYON NETWORKS LIMITED",
       "UTKAL SPECIALITY INDUSTRIES INDIA LIMITED"
     ],
-    "last_checked": "2026-09-30T19:09:56.527098+05:30"
+    "last_checked": "2026-10-01T00:03:42.684869+05:30"
   },
   "Integrated Registry": {
     "companies": [
@@ -47,7 +47,7 @@
       "SOLVE PLASTIC PRODUCTS LIMITED",
       "STORAGE TECHNOLOGIES AND AUTOMATION LIMITED"
     ],
-    "last_checked": "2026-09-30T19:09:57.477768+05:30"
+    "last_checked": "2026-10-01T00:03:43.731068+05:30"
   },
   "KFin": {
     "companies": [
@@ -66,6 +66,7 @@
       "AXIOM GAS ENGINEERING LIMITED",
       "AYE FINANCE LIMITED",
       "BAGMANE PRIME OFFICE REIT",
+      "BENCH MARK INFOTECH SERVICES LIMITED",
       "CALIBER MINING AND LOGISTICS LIMITED IPO",
       "CENTRAL MINE PLANNING AND DESIGN INSTITUTE LIMITED",
       "CENTURY BUSINESS MEDIA LIMITED",
@@ -110,6 +111,7 @@
       "MV ELECTROSYSTEMS LIMITED",
       "NOVUS LOYALTY LIMITED",
       "ONEMI TECHNOLOGY SOLUTIONS LIMITED",
+      "ORIENT CABLES (INDIA) LIMITED-IPO",
       "POWER FINANCE CORPORATION LIMITED - NCDS",
       "POWER FINANCE CORPORATION LIMITED - ZERO COUPON NCDS",
       "PRACHAY CAPITAL LIMITED NCDS JUNE 2026",
@@ -142,18 +144,20 @@
       "VINOD TEXWORLD LIMITED",
       "XTRANET TECHNOLOGIES LIMITED"
     ],
-    "last_checked": "2026-09-30T19:09:53.881521+05:30"
+    "last_checked": "2026-10-01T00:03:39.556456+05:30"
   },
   "MUFG": {
     "companies": [
+      "ACEVECTOR LIMITED - IPO",
       "ANAND SEAMLESS LIMITED - SME IPO",
       "FX MULTITECH LIMITED - SME IPO",
       "MONEYVIEW LIMITED - IPO",
       "NATIONAL STOCK EXCHANGE OF INDIA LIMITED - IPO",
+      "RUNWAL ENTERPRISE LIMITED - IPO",
       "SWASTIKA INFRA LIMITED - IPO",
       "VIVEKANAND COTSPIN LIMITED - SME IPO"
     ],
-    "last_checked": "2026-09-30T19:09:53.823236+05:30"
+    "last_checked": "2026-10-01T00:03:38.768982+05:30"
   },
   "Mudra": {
     "companies": [
@@ -162,7 +166,7 @@
       "RECODE STUDIOS LIMITED",
       "SUSAN ELECTRICALS INDIA LIMITED"
     ],
-    "last_checked": "2026-09-30T19:09:55.087542+05:30"
+    "last_checked": "2026-10-01T00:03:41.116375+05:30"
   },
   "Purva Sharegistry": {
     "companies": [
@@ -209,6 +213,6 @@
       "SPECIALITY MEDICINES PRIVATE LIMITED",
       "WESTERN OVERSEAS STUDY ABROAD LIMITED"
     ],
-    "last_checked": "2026-09-30T19:09:54.348674+05:30"
+    "last_checked": "2026-10-01T00:03:40.291088+05:30"
   }
 }
