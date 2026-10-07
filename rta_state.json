@@ -1,17 +1,14 @@
 {
   "Bigshare": {
     "companies": [
-      "A-ONE STEELS INDIA LIMITED",
-      "ADROIT INDUSTRIES INDIA LTD",
       "GERMAN GREEN STEEL AND POWER LIMITED",
       "GREEN ASIA IMPEX LIMITED",
-      "LIQVD DIGITAL INDIA LIMITED",
+      "NITYAS GEMS AND JEWELLERY LIMITED",
+      "OMARA VENTURES INDIA LIMITED",
       "PIND HOSPITALITY LIMITED",
-      "ROOPA SCREEN LIMITED",
-      "UNITEC FIBRES LIMITED",
       "VANS ELECTROENGINEERINGS LIMITED"
     ],
-    "last_checked": "2026-10-07T11:45:27.080361+05:30"
+    "last_checked": "2026-10-07T19:10:53.656222+05:30"
   },
   "Cameo": {
     "companies": [
@@ -40,7 +37,7 @@
       "TAKYON NETWORKS LIMITED",
       "UTKAL SPECIALITY INDUSTRIES INDIA LIMITED"
     ],
-    "last_checked": "2026-10-07T11:45:29.806257+05:30"
+    "last_checked": "2026-10-07T19:10:56.585562+05:30"
   },
   "Integrated Registry": {
     "companies": [
@@ -56,7 +53,7 @@
       "SOLVE PLASTIC PRODUCTS LIMITED",
       "STORAGE TECHNOLOGIES AND AUTOMATION LIMITED"
     ],
-    "last_checked": "2026-10-07T11:45:30.859787+05:30"
+    "last_checked": "2026-10-07T19:10:57.635448+05:30"
   },
   "KFin": {
     "companies": [
@@ -158,18 +155,13 @@
   "MUFG": {
     "companies": [
       "ACEVECTOR LIMITED - IPO",
-      "ANAND SEAMLESS LIMITED - SME IPO",
-      "FX MULTITECH LIMITED - SME IPO",
-      "MONEYVIEW LIMITED - IPO",
       "NATIONAL STOCK EXCHANGE OF INDIA LIMITED - IPO",
       "RUNWAL ENTERPRISE LIMITED - IPO",
       "SHAH INVESTOR’S HOME LIMITED - IPO",
       "SHREE TNB POLYMERS LIMITED - SME IPO",
-      "SWASTIKA INFRA LIMITED - IPO",
-      "VISHAL NIRMITI LIMITED - IPO",
-      "VIVEKANAND COTSPIN LIMITED - SME IPO"
+      "VISHAL NIRMITI LIMITED - IPO"
     ],
-    "last_checked": "2026-10-07T11:45:25.922782+05:30"
+    "last_checked": "2026-10-07T19:10:52.479588+05:30"
   },
   "Mudra": {
     "companies": [
@@ -178,7 +170,7 @@
       "RECODE STUDIOS LIMITED",
       "SUSAN ELECTRICALS INDIA LIMITED"
     ],
-    "last_checked": "2026-10-07T11:45:28.247974+05:30"
+    "last_checked": "2026-10-07T19:10:54.984023+05:30"
   },
   "Purva Sharegistry": {
     "companies": [
@@ -226,6 +218,6 @@
       "SPECIALITY MEDICINES PRIVATE LIMITED",
       "WESTERN OVERSEAS STUDY ABROAD LIMITED"
     ],
-    "last_checked": "2026-10-07T11:45:27.460047+05:30"
+    "last_checked": "2026-10-07T19:10:54.183216+05:30"
   }
 }
