@@ -1,14 +1,16 @@
 {
   "Bigshare": {
     "companies": [
+      "ACME INDIA INDUSTRIES LIMITED",
       "GERMAN GREEN STEEL AND POWER LIMITED",
       "GREEN ASIA IMPEX LIMITED",
       "NITYAS GEMS AND JEWELLERY LIMITED",
       "OMARA VENTURES INDIA LIMITED",
+      "PARAMOUNT SYNTEX LIMITED",
       "PIND HOSPITALITY LIMITED",
       "VANS ELECTROENGINEERINGS LIMITED"
     ],
-    "last_checked": "2026-10-12T02:51:08.373561+05:30"
+    "last_checked": "2026-10-12T06:10:06.072869+05:30"
   },
   "Cameo": {
     "companies": [
@@ -38,7 +40,7 @@
       "TAKYON NETWORKS LIMITED",
       "UTKAL SPECIALITY INDUSTRIES INDIA LIMITED"
     ],
-    "last_checked": "2026-10-12T02:51:11.082461+05:30"
+    "last_checked": "2026-10-12T06:10:08.795514+05:30"
   },
   "Integrated Registry": {
     "companies": [
@@ -54,7 +56,7 @@
       "SOLVE PLASTIC PRODUCTS LIMITED",
       "STORAGE TECHNOLOGIES AND AUTOMATION LIMITED"
     ],
-    "last_checked": "2026-10-12T02:51:12.019471+05:30"
+    "last_checked": "2026-10-12T06:10:09.810135+05:30"
   },
   "KFin": {
     "companies": [
@@ -162,7 +164,7 @@
       "SHREE TNB POLYMERS LIMITED - SME IPO",
       "VISHAL NIRMITI LIMITED - IPO"
     ],
-    "last_checked": "2026-10-12T02:51:07.759034+05:30"
+    "last_checked": "2026-10-12T06:10:05.058928+05:30"
   },
   "Mudra": {
     "companies": [
@@ -171,7 +173,7 @@
       "RECODE STUDIOS LIMITED",
       "SUSAN ELECTRICALS INDIA LIMITED"
     ],
-    "last_checked": "2026-10-12T02:51:09.611786+05:30"
+    "last_checked": "2026-10-12T06:10:07.217582+05:30"
   },
   "Purva Sharegistry": {
     "companies": [
@@ -219,6 +221,6 @@
       "SPECIALITY MEDICINES PRIVATE LIMITED",
       "WESTERN OVERSEAS STUDY ABROAD LIMITED"
     ],
-    "last_checked": "2026-10-12T02:51:08.804691+05:30"
+    "last_checked": "2026-10-12T06:10:06.438838+05:30"
   }
 }
