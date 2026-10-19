@@ -10,7 +10,7 @@
       "PIND HOSPITALITY LIMITED",
       "VANS ELECTROENGINEERINGS LIMITED"
     ],
-    "last_checked": "2026-10-19T13:52:01.052626+05:30"
+    "last_checked": "2026-10-19T21:16:14.439091+05:30"
   },
   "Cameo": {
     "companies": [
@@ -40,7 +40,7 @@
       "TAKYON NETWORKS LIMITED",
       "UTKAL SPECIALITY INDUSTRIES INDIA LIMITED"
     ],
-    "last_checked": "2026-10-19T13:52:03.800933+05:30"
+    "last_checked": "2026-10-19T21:16:17.231324+05:30"
   },
   "Integrated Registry": {
     "companies": [
@@ -56,7 +56,7 @@
       "SOLVE PLASTIC PRODUCTS LIMITED",
       "STORAGE TECHNOLOGIES AND AUTOMATION LIMITED"
     ],
-    "last_checked": "2026-10-19T13:52:04.824345+05:30"
+    "last_checked": "2026-10-19T21:16:18.401624+05:30"
   },
   "KFin": {
     "companies": [
@@ -158,11 +158,12 @@
   "MUFG": {
     "companies": [
       "HD FIRE PROTECT LIMITED - IPO",
+      "RAVITA ENGINEERING SERVICES LIMITED - SME IPO",
       "SHAH INVESTOR’S HOME LIMITED - IPO",
       "SHREE TNB POLYMERS LIMITED - SME IPO",
       "VISHAL NIRMITI LIMITED - IPO"
     ],
-    "last_checked": "2026-10-19T13:52:00.774648+05:30"
+    "last_checked": "2026-10-19T21:16:14.257431+05:30"
   },
   "Mudra": {
     "companies": [
@@ -171,7 +172,7 @@
       "RECODE STUDIOS LIMITED",
       "SUSAN ELECTRICALS INDIA LIMITED"
     ],
-    "last_checked": "2026-10-19T13:52:02.237233+05:30"
+    "last_checked": "2026-10-19T21:16:15.583611+05:30"
   },
   "Purva Sharegistry": {
     "companies": [
@@ -219,6 +220,6 @@
       "SPECIALITY MEDICINES PRIVATE LIMITED",
       "WESTERN OVERSEAS STUDY ABROAD LIMITED"
     ],
-    "last_checked": "2026-10-19T13:52:01.418493+05:30"
+    "last_checked": "2026-10-19T21:16:14.840165+05:30"
   }
 }
