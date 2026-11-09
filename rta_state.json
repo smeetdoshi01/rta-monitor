@@ -1,11 +1,12 @@
 {
   "Bigshare": {
     "companies": [
+      "ANTALA INDUSTRIES LIMITED",
       "CARVER ROBOWELD LIMITED",
       "M K SONS FINE JEWELS LIMITED",
       "SHELLZ INDIA LIMITED"
     ],
-    "last_checked": "2026-11-09T04:21:40.487906+05:30"
+    "last_checked": "2026-11-09T07:47:53.707926+05:30"
   },
   "Cameo": {
     "companies": [
@@ -36,7 +37,7 @@
       "UTKAL SPECIALITY INDUSTRIES INDIA LIMITED",
       "VEDANT POLY FABS LIMITED"
     ],
-    "last_checked": "2026-11-09T04:21:43.260818+05:30"
+    "last_checked": "2026-11-09T07:47:56.535732+05:30"
   },
   "Integrated Registry": {
     "companies": [
@@ -52,7 +53,7 @@
       "SOLVE PLASTIC PRODUCTS LIMITED",
       "STORAGE TECHNOLOGIES AND AUTOMATION LIMITED"
     ],
-    "last_checked": "2026-11-09T04:21:44.298255+05:30"
+    "last_checked": "2026-11-09T07:47:57.588167+05:30"
   },
   "KFin": {
     "companies": [
@@ -160,7 +161,7 @@
       "SFC ENVIRONMENTAL TECHNOLOGIES LIMITED-IPO",
       "VECTRAS ENPROCON LIMITED - IPO"
     ],
-    "last_checked": "2026-11-09T04:21:38.213327+05:30"
+    "last_checked": "2026-11-09T07:47:50.208062+05:30"
   },
   "Mudra": {
     "companies": [
@@ -168,7 +169,7 @@
       "G V ELECTRICALS LIMITED",
       "SHREEKRISHNA IMPEX VENTURES LIMITED"
     ],
-    "last_checked": "2026-11-09T04:21:41.672503+05:30"
+    "last_checked": "2026-11-09T07:47:54.762765+05:30"
   },
   "Purva Sharegistry": {
     "companies": [
@@ -216,6 +217,6 @@
       "SPECIALITY MEDICINES PRIVATE LIMITED",
       "WESTERN OVERSEAS STUDY ABROAD LIMITED"
     ],
-    "last_checked": "2026-11-09T04:21:40.909740+05:30"
+    "last_checked": "2026-11-09T07:47:54.039170+05:30"
   }
 }
